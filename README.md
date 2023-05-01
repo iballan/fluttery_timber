@@ -12,7 +12,7 @@ Another Android Timber-like Flutter Package. I use Fluttery Timber in my project
 Add the package to your pubspec:
 
 ```dart
-fluttery_timber: 0.0.1
+fluttery_timber: ^0.0.2
 ```
 
 
