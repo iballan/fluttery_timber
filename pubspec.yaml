@@ -1,6 +1,6 @@
 name: fluttery_timber
 description: Another Android Timber-like Flutter Package. I use Fluttery Timber in my projects. Hope you find it useful.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/iballan/fluttery_timber
 
 environment:
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  intl: ^0.18.1
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:
