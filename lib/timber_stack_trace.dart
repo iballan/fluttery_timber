@@ -14,7 +14,7 @@ class TimberStackTrace {
 
   void _parseTrace() {
     /* The trace comes with multiple lines of strings, we just want the first line, which has the information we need */
-    var traceString = this._trace.toString().split("\n")[levelOutOfTimberStacktrace];
+    var traceString = _trace.toString().split("\n")[levelOutOfTimberStacktrace];
 
     /* Search through the string and find the index of the file name by looking for the '.dart' regex */
     var indexOfFileName = traceString.indexOf(RegExp(r'[A-Za-z]+.dart'));
@@ -30,11 +30,11 @@ class TimberStackTrace {
       To get the column number, we would have to get the third index
     */
 
-    this.fullFileName = listOfInfos[0];
-    this.fileName = fullFileName.replaceAll('.dart', '');
-    this.lineNumber = int.parse(listOfInfos[1]);
+    fullFileName = listOfInfos[0];
+    fileName = fullFileName.replaceAll('.dart', '');
+    lineNumber = int.parse(listOfInfos[1]);
     var columnStr = listOfInfos[2];
     columnStr = columnStr.replaceFirst(")", "");
-    this.columnNumber = int.parse(columnStr);
+    columnNumber = int.parse(columnStr);
   }
 }
