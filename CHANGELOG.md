@@ -1,3 +1,6 @@
+## 0.0.3
+
+* Downgrade Dart package.
 
 ## 0.0.2
 
