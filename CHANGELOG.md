@@ -1,3 +1,7 @@
+## 0.0.5
+
+* Update libraries
+
 ## 0.0.4
 
 * Support Dart >= 3.

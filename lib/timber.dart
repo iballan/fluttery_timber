@@ -1,10 +1,12 @@
 
 import 'package:fluttery_timber/timber_tree.dart';
 
+import 'debug_tree.dart';
+
 enum TimberLevel { info, debug, warning, error }
 
 class Timber {
-  static late final TimberTree _tree;
+  static TimberTree _tree = DebugTree();
 
   /// Global Timber log level
   static TimberLevel logLevel = TimberLevel.info;
