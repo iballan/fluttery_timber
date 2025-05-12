@@ -29,6 +29,10 @@ class DebugTree implements TimberTree {
 
     message = '${_getLevelEmoji(level)} $message';
 
+    if (error != null) {
+      message += '\nError: $error';
+    }
+
     debugPrint('$prefix $message');
     if (stackTrace != null) {
       _debugPrintStack(level, stackTrace);
