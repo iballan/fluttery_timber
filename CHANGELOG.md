@@ -1,3 +1,7 @@
+## 0.0.6
+* Print error messages
+* Update libraries
+
 ## 0.0.5
 
 * Update libraries
